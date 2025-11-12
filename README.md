@@ -1,55 +1,72 @@
-PDF Research Assistant AI Agent
-Overview
+📄 PDF Research Assistant AI Agent  
 
-The PDF Research Assistant is a local AI agent that allows users to upload PDF documents and ask multiple questions about their content. The agent provides context-grounded answers using a local LLM (Llama 3 via Ollama) and LangChain for document retrieval. Users can also download the entire chat history.
+ 🚀 Overview  
+The **PDF Research Assistant** is a **local AI-powered tool** that lets you upload and analyze large PDF files (up to **500 MB** each). It uses **Llama 3 (via Ollama)** and **LangChain** for intelligent, context-aware question answering — all processed **locally and offline**.  
 
-This project is fully offline, free, and requires no sign-in, making it ideal for demonstrations and adding to your resume or portfolio.
+With a clean interface, customizable themes, and multi-PDF management, it’s ideal for research, portfolio projects, or offline document analysis.  
 
-Features
+📸 Interface Preview
+📂 Upload & Manage PDFs
+💬 Chat
+🔧 Settings
+ℹ️ About
 
-Upload PDF documents (e.g., research papers, company policies).
+ ✨ Features  
 
-Ask multiple questions sequentially.
+✅ **Upload & Manage Multiple PDFs** – Handle several PDFs at once (supports up to 500 MB each).  
+✅ **Ask Smart Questions** – Get context-grounded answers from your PDFs.  
+✅ **Theme Customization** – Switch between **Light** 🌞 and **Dark** 🌙 modes.  
+✅ **Sidebar Navigation** – Easily move between uploads, chat, and settings.  
+✅ **Download Chat History** – Save your Q&A conversations as a `.txt` file.  
+✅ **Fully Local & Secure** – Runs 100% offline. No sign-in. No data tracking.  
+✅ **Optimized for Large Files** – Efficient memory handling and garbage collection.  
 
-Answers are based on the uploaded PDF content.
+---
 
-Save all Q&A in a downloadable text file.
+ 🧠 Tech Stack  
 
-Built using Streamlit, LangChain, FAISS, HuggingFace embeddings, and Llama 3 (Ollama).
+- **Streamlit** – Interactive web UI  
+- **LangChain** – Document retrieval and QA chain  
+- **FAISS** – Vector database for semantic search  
+- **HuggingFace Sentence Transformers** – Embeddings model  
+- **Ollama + Llama 3** – Local LLM inference
+  
+  🛡️ Security & Privacy
 
-Installation & Setup
+All processing is done locally on your system.
 
-Install Python 3.10+ and Ollama
- with Llama 3:
+No files or chat data leave your machine.
 
+Automatic file-size validation prevents oversized uploads.
+  
+- Usage
+
+Upload one or more PDFs (up to 500 MB each).
+
+Select a PDF from the sidebar to start chatting.
+
+Ask any question — the model gives contextual answers.
+
+Switch themes or change settings in the sidebar.
+
+Download chat history when done.
+
+
+ ⚙️ Installation & Setup  
+
+ 1️⃣ Prerequisites  
+Install **Python 3.10+** and **Ollama** (with Llama 3 model):
+
+```bash
 ollama pull llama3
 
-
-Clone the repository:
-
-git clone https://github.com/Vishwa77777/PDF_Agent.git
-cd PDF_Agent
-
-
-(Optional) Create a virtual environment:
-
+2️⃣ Create a Virtual Environment
 python -m venv env
 env\Scripts\activate
 
-
-Install dependencies:
-
+3️⃣ Install Dependencies
 pip install streamlit langchain langchain-community PyPDF2 faiss-cpu sentence-transformers
 
-
-Run the app:
-
+4️⃣ Run the App
 streamlit run app.py
-
-Usage
-
-Upload a PDF file in the app.
-
-Ask multiple questions about the document.
-
-Download chat history for future reference.
+ give all in correct format and in one font highlight only imp one
